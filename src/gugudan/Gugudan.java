@@ -1,26 +1,20 @@
 package gugudan;
-
-public class Gugudan {
-	public static int[] calculate(int items) {
-		int [] gugu = new int[9];
-		for (int i = 0; i<9; i++) {
-		gugu[i] = items * (i+1);
-		
-		}
-		return gugu;
-	}
-	public static void print(int[] result) {
-		for(int i=0; i<result.length; i++) {
-			System.out.println(result[i]);
-		}
-	}
+import java.util.Scanner;
+public class Gugudan{
+	
 	public static void main(String[] args) {
-		for(int i=2; i<10; i++) {
-			int [] result = calculate(i);
-			print(result);
-		
+		Scanner src = new Scanner(System.in);	
+		String text = src.nextLine();
+		String[] val = text.split(",");
+		int first = Integer.parseInt(val[0]);
+		int second = Integer.parseInt(val[1]);
+		for (int i = 0; i < second; i++) {
+			int[] res = new int[second];
+			res[i] = first * (i+1);
+			System.out.println(res[i]);
 		}
-			
-		}
-	}
+}
 
+		
+	
+}
