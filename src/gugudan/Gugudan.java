@@ -4,8 +4,8 @@ public class Gugudan{
 	
 	public static void main(String[] args) {
 		Scanner src = new Scanner(System.in);	
-		String text = src.nextLine();
-		String[] val = text.split(",");
+		String texts = src.nextLine();
+		String[] val = texts.split(",");
 		int first = Integer.parseInt(val[0]);
 		int second = Integer.parseInt(val[1]);
 		for (int i = 0; i < second; i++) {
@@ -13,7 +13,7 @@ public class Gugudan{
 			res[i] = first * (i+1);
 			System.out.println(res[i]);
 		}
-}
+ }
 
 		
 	
